@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<head>
+    <title>AutoPC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="./frontend/css/styles.css" rel="stylesheet">
+
+    <!-- figma css -->
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Candara&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Euphoria+Script&display=swap" rel="stylesheet" />
+    <link href="./main.css" rel="stylesheet" />
+
+    <!-- metadata -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="autopc">
+    <meta name="description" content="AutoPC, made for QHacks 2022.">
+    <meta name="author" content="David C, Amy C, Mercy D, Jagrit R">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav id="main" class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #628BA1;">
+        <div class="container-fluid">
+            <div class="nav-text">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./frontend/images/logo.png" alt="AutoPC" style="width:15%;height:15%;padding-right:2%;">
+                    AutoPC
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="row align-items-end">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./build.html">Build PC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://pc-builder.net/knowledge-base/">Guides and Resources</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#extra" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./frontend/images/ca_flag.png" style="width:30%;height:30%;"> CA
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./index.html">
+                            <img src="./frontend/images/ca_flag.png" style="width:30%;height:30%;"> CA</a></li>
+                        <li><a class="dropdown-item" href="./index.html">
+                            <img src="./frontend/images/us_flag.png" style="width:30%;height:30%;"> US</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="margin:10% 0% 5% 0%;width:100%;">
+        <div class="build-text">
+
+            <!-- Titles -->
+            <div class="row" style="margin-bottom: 1%;">
+                <div class="col">
+                    CPU
+                </div>
+                <div class="col">
+                    CPU Coolant
+                </div>
+                <div class="col">
+                    Motherboard
+                </div>
+                <div class="col">
+                    Memory
+                </div>
+                <div class="col">
+                    Storage
+                </div>
+                <div class="col">
+                    Video Card
+                </div>
+                <div class="col">
+                    Power Supply
+                </div>
+                <div class="col">
+                    Wi-Fi Card
+                </div>
+            </div>
+
+            <!-- Chosen specs-->
+            <div class="row" style="margin-bottom: 1%;">
+                <div class="col">
+                    <div class="disp-main">
+                        AMD A10-7870K<br>
+                        C$353.36
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-main">
+                        ARCTIC Alpine 11 GT Rev 2<br>
+                        C$103.60
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-main">
+                        ASRock 760GM-HDV<br>
+                        C$259.99
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-main">
+                        ADATA XPG GAMMIX D10 16 GB<br>
+                        C$217.99
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-main">
+                        ADATA SU630<br>C$114.11
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-main">
+                        AMD 100-506095<br>C$975.99
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-main">
+                        ARESGAME AGS<br>C$79.98
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-main">
+                        Edimax EW-7811UTC<br>C$23.99
+                    </div>
+                </div>
+            </div>
+
+            <!-- Options 1 -->
+            <div class="row" style="margin-bottom: 1%;">
+                <div class="col">
+                    <div class="disp-sec">
+                        AMD A8-7600<br>C$238.65
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        ARCTIC Freezer 33 CO<br>C$95.40
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        ASRock B450 Pro4<br>C$330.75
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        Acer Predator Apollo 16 GB<br>C$248.98
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        ADATA Swordfish<br>C$88.80
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        ASRock Challenger D OC<br>C$989.99
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        Aerocool Integrator<br>C$90.32
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        Gigabyte GC-WB1733D-I<br>C$23.10
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Options 2 -->
+            <div class="row" style="margin-bottom: 1%;">
+                <div class="col">
+                    <div class="disp-sec">
+                        AMD FX-4350<br>C$236.31
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        ARCTIC Freezer 34 eSports DUO<br>C$79.98
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        ASRock B460 Steel Legend<br>C$280.19
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        Acer Predator Apollo 16 GB<br>C$232.98
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        ADATA Ultimate SU650<br>C$79.98
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        ASRock Phantom Gaming D OC<br>C$809.98
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        Antec Basiq<br>C$122.18
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-sec">
+                        StarTech USB150WN1X1<br>C$20.19
+                        <button class="btn btn-dark" type="button">Switch</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More -->
+            <div class="row" style="margin-bottom: 1%;">
+                <div class="col">
+                    <div class="disp-more">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#mcpu">
+                            View More
+                        </button>
+                        <div class="modal fade" id="mcpu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    <div class="txt">
+                                        More CPU Options
+                                    </div></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row" style="margin-bottom: 1%;"> 
+                                        <div class="col">
+                                            <div class="disp-sec">
+                                                AMD FX-8320<br>C$295.22
+                                                <button class="btn btn-dark" type="button">Switch</button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="disp-sec">
+                                                AMD Ryzen 5 1500X<br>C$251.00
+                                                <button class="btn btn-dark" type="button">Switch</button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="disp-sec">
+                                                AMD Ryzen 5 1600 (12nm)<br>C$299.00
+                                                <button class="btn btn-dark" type="button">Switch</button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="disp-sec">
+                                                AMD Ryzen 5 3600<br>C$311.95
+                                                <button class="btn btn-dark" type="button">Switch</button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="disp-sec">
+                                                AMD Ryzen 5 3600X<br>C$339.00
+                                                <button class="btn btn-dark" type="button">Switch</button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="disp-sec">
+                                                AMD Ryzen 5 5600G<br>C$288.50
+                                                <button class="btn btn-dark" type="button">Switch</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-more"><button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#mcc">
+                        View More
+                    </button>
+                    <div class="modal fade" id="mcc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <div class="txt">
+                                    More CPU Coolant Options
+                                </div></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-bottom: 1%;"> 
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$124.64
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$75.98
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50<br>C$91.33
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50 TR<br>C$107.16
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer i32<br>C$84.10
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Liquid Freezer II 120<br>C$92.99
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-more"><button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#mmot">
+                        View More
+                    </button>
+                    <div class="modal fade" id="mmot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <div class="txt">
+                                    More Motherboard Options
+                                </div></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-bottom: 1%;"> 
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ASRock B460M Steel Legend, C$228.55
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ASRock B550 PG Velocita, C$304.74
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50<br>C$91.33
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50 TR<br>C$107.16
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer i32<br>C$84.10
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Liquid Freezer II 120<br>C$92.99
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-more"><button type="button" class="btn btn-secondary" data-bs-toggle="mmem" data-bs-target="#mcc">
+                        View More
+                    </button>
+                    <div class="modal fade" id="mmem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <div class="txt">
+                                    More Memory Options
+                                </div></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-bottom: 1%;"> 
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$124.64
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$75.98
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50<br>C$91.33
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50 TR<br>C$107.16
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer i32<br>C$84.10
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Liquid Freezer II 120<br>C$92.99
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-more"><button type="button" class="btn btn-secondary" data-bs-toggle="mst" data-bs-target="#mcc">
+                        View More
+                    </button>
+                    <div class="modal fade" id="mst" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <div class="txt">
+                                    More Storage Options
+                                </div></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-bottom: 1%;"> 
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$124.64
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$75.98
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50<br>C$91.33
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50 TR<br>C$107.16
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer i32<br>C$84.10
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Liquid Freezer II 120<br>C$92.99
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-more"><button type="button" class="btn btn-secondary" data-bs-toggle="mvc" data-bs-target="#mcc">
+                        View More
+                    </button>
+                    <div class="modal fade" id="mvc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <div class="txt">
+                                    More Video Card Options
+                                </div></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-bottom: 1%;"> 
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$124.64
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$75.98
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50<br>C$91.33
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50 TR<br>C$107.16
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer i32<br>C$84.10
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Liquid Freezer II 120<br>C$92.99
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-more"><button type="button" class="btn btn-secondary" data-bs-toggle="mps" data-bs-target="#mcc">
+                        View More
+                    </button>
+                    <div class="modal fade" id="mps" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <div class="txt">
+                                    More Power Supply Options
+                                </div></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-bottom: 1%;"> 
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$124.64
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$75.98
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50<br>C$91.33
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50 TR<br>C$107.16
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer i32<br>C$84.10
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Liquid Freezer II 120<br>C$92.99
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="disp-more"><button type="button" class="btn btn-secondary" data-bs-toggle="mwfc" data-bs-target="#mcc">
+                        View More
+                    </button>
+                    <div class="modal fade" id="mwfc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <div class="txt">
+                                    More Wi-Fi Card Options
+                                </div></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-bottom: 1%;"> 
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$124.64
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">
+                                            ARCTIC Freezer 34 eSports DUO<br>C$75.98
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50<br>C$91.33
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer 50 TR<br>C$107.16
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Freezer i32<br>C$84.10
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="disp-sec">ARCTIC Liquid Freezer II 120<br>C$92.99
+                                            <button class="btn btn-dark" type="button">Switch</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is bootstrap's JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- u can include custom JAVASCRIPT here -->
+    <script src="./frontend/js/scripts.js"></script>
+</body>

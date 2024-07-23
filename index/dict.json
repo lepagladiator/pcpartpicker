@@ -1,0 +1,26 @@
+{
+    "motherboard": {
+        "component": "motherboard",
+        "items": "['', '', 'ASRock B550 Phantom Gaming-ITX/ax, C$272.30', 'ASRock B550M Phantom Gaming 4, C$259.92', 'ASRock B550M-ITX/ac, C$248.95', 'ASRock C236M WS, C$272.77', 'ASRock E3C236D4U, C$331.07']"
+    },
+    "video-card": {
+        "component": "video-card",
+        "items": "['AMD 100-506095, C$975.99', 'ASRock Challenger D OC, C$989.99', 'ASRock Phantom Gaming D OC, C$809.98', 'ATI FirePro W8000, C$1,169.68', 'Asus CERBERUS, C$990.34', 'Asus DUAL EVO OC, C$820.00', 'Asus DUAL OC, C$1,003.96', 'Asus DirectCU II, C$897.93', 'Asus DirectCU II, C$897.93', 'Asus Phoenix OC, C$899.99']"
+    },
+    "memory": {
+        "component": "memory",
+        "items": "['ADATA XPG GAMMIX D10 16 GB, C$217.99', 'Acer Predator Apollo 16 GB, C$248.98', 'Acer Predator Apollo 16 GB, C$232.98', 'Acer Predator Apollo 16 GB, C$231.98', 'Acer Predator Talos 16 GB, C$159.98', 'Corsair Dominator Platinum 32 GB, C$172.98', 'Corsair Dominator Platinum RGB 16 GB, C$159.99', 'Corsair Dominator Platinum RGB 16 GB, C$154.99', 'Corsair Dominator Platinum RGB 16 GB, C$156.99', 'Corsair Dominator Platinum RGB 16 GB, C$164.98']"
+    },
+    "power-supply": {
+        "component": "power-supply",
+        "items": "['ARESGAME AGS, C$79.98', 'Aerocool Integrator, C$90.32', 'Antec Basiq, C$122.18', 'Antec Earthwatts Gold Pro, C$93.99', 'Antec Earthwatts Gold Pro, C$86.50', 'Antec High Current Gamer Gold, C$88.99', 'Antec NeoECO Classic, C$84.98', 'Antec NeoECO Gold, C$109.98', 'Apevia CAPTAIN, C$95.66', 'Apevia Prestige, C$106.80']"
+    },
+    "wireless-network-card": {
+        "component": "wireless-network-card",
+        "items": "['Edimax EW-7811UTC, C$23.99', 'Gigabyte GC-WB1733D-I, C$23.10', 'StarTech USB150WN1X1, C$20.19', 'StarTech USB150WN1X1W, C$19.53', 'StarTech USB300WN2X2C, C$23.77', 'TP-Link ARCHER T2U PLUS, C$16.98', 'TP-Link Archer T2U, C$17.99', 'TP-Link Archer T3U, C$22.99', 'TP-Link TL-WN822N, C$16.99', 'TP-Link TL-WN881ND, C$16.98']"
+    },
+    "internal-hard-drive": {
+        "component": "internal-hard-drive",
+        "items": "['ADATA SU630, C$114.11', 'ADATA Swordfish, C$88.80', 'ADATA Ultimate SU650, C$79.98', 'ADATA Ultimate SU650, C$97.39', 'ADATA Ultimate SU650, C$119.99', 'ADATA Ultimate SU750, C$112.99', 'ADATA XPG GAMMIX S11 Pro, C$119.99', 'ADATA XPG GAMMIX S11 Pro, C$102.05', 'ADATA XPG GAMMIX S5, C$90.24', 'ADATA XPG GAMMIX S5, C$108.37']"
+    }
+}
